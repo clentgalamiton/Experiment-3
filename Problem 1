@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, sum = 0;
+    double average;
+    int array[10];
+    
+    cout << "Enter integers"<< endl;
+    
+    for (n = 0; n < 10; n++)
+      { 
+       cin >> array[n];
+      }
+    cout << endl;
+    cout << endl;
+    
+    for ( n = 0; n < 10; n++)
+    { 
+        sum = sum+array[n];
+        average = sum/10;
+    }
+    
+    cout << "The sum of the integers is:" << sum << endl;
+    cout << "The average of the integers is" << average << endl;
+    return 0;
+
+}
